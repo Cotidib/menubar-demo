@@ -1,14 +1,13 @@
 import React from 'react'
-import logo from './images/logo.svg'
 import { FaBars } from 'react-icons/fa'
 import {useGlobalContext} from './context'
 
 const Navbar = () => {
-  const{openSidebar, openSubmenu, closeSubmenu} = useGlobalContext();
+  const{openSideBar, openSubmenu, closeSubmenu} = useGlobalContext();
 
   return <nav>
     <div className='nav-header'>
-    <button className='nav-toggle' onClick={openSidebar}><FaBars/></button>
+    <button className='nav-toggle' onClick={openSideBar}><FaBars/></button>
     <span className='nav-logo'>LOGO</span>
     </div> 
     <ul className='nav-links'>
