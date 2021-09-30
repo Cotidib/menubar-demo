@@ -1,11 +1,11 @@
 import React from 'react'
 import phoneImg from './images/phone.svg'
-// import {useGlobalContext} from './context'
+import {useGlobalContext} from './context'
 
 const Hero = () => {
-  // const {closeSubmenu} = useGlobalContext();
+  const {closeSubmenu} = useGlobalContext();
 
-  return <section className='hero-container'>
+  return <section className='hero-container' onMouseOver={closeSubmenu}>
     <div className='hero-center'>
       <article className='hero-info'>
         <h1>The Product landing page</h1>

@@ -163,7 +163,7 @@ nav{
   position: relative;
 }
 
-.show{
+.show-sidebar{
   visibility: visible;
   transform: scale(1);
   transition: 0.15s;
@@ -257,9 +257,49 @@ nav{
 }
 
 @media screen and (min-width: 800px) {
+  .submenu-container{
+    position: absolute;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    border-radius: 5px;
+    background-color: white;
+    transform: translateX(-50%);
+    transition: all 0.3s linear;
+  }
 
-}
+  .submenu-container::before {
+    content: '';
+    display: block;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid white;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
-@media screen and (min-width: 800px) {
+  .submenu-container h4{
+    text-transform: capitalize;
+  }
 
+  .submenu-center {
+    display: grid;
+    gap: 1.5rem 2rem;
+  }
+
+  .col2 {
+    grid-template-columns: repeat(2, 1fr);
+   }
+   .col2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .col3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .col4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  
 }
