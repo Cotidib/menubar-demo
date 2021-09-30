@@ -265,6 +265,11 @@ nav{
     background-color: white;
     transform: translateX(-50%);
     transition: all 0.3s linear;
+    display: none;
+  }
+
+  .submenu-show{
+    display: block;
   }
 
   .submenu-container::before {

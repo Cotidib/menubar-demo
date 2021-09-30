@@ -24,7 +24,7 @@ const Submenu = () => {
     
   }, [links.length, location])
 
-  return <aside className={`${isSubmenuOpen? 'submenu-container submenu-show': 'submenu'}`} ref={container}>
+  return <aside className={`${isSubmenuOpen? 'submenu-container submenu-show': 'submenu-container'}`} ref={container}>
     <h4>{page}</h4>
     <div className={`submenu-center ${gridcolumns}`}>
       {links.map((link, index) => {
