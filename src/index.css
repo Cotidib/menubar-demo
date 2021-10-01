@@ -198,6 +198,10 @@ nav{
   color: red;
 } */
 
+.submenu-container{
+  display: none;
+}
+
 
 /* DESKTOP */
 
